@@ -22,8 +22,8 @@
     <!-- navbar -->
     <div class="navbar bg-base-100 shadow-sm px-10 py-3">
         <div class="flex-1 flex gap-2 items-center">
-            <img class="h-10" src="assets/logo.png" alt="">
-            <a class="text-[#006747] text-[20px] font-bold leading-tight">Emergency <br> Service</a>
+            <img class="h-10 hidden sm:block" src="assets/logo.png" alt="">
+            <a class="text-[#006747] text-[20px] font-bold leading-tight ">Emergency <br> Service</a>
         </div>
 
         <div class="flex-none">
@@ -47,18 +47,19 @@
     <!-- banner section -->
     <section
         class="h-[230px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center justify-center text-center text-white">
-        <img class="h-[92px] w-[92px]" src="assets/logo.png" alt="">
-        <h1 class="text-[35px] font-bold my-2">Emergency Service Directory</h1>
-        <p class="text-[17px] font-semibold">Government Emergency Services at Your Fingertip – A Project by Government
+        <img class="h-[80px] sm:h-[92px] w-[80px] sm:w-[92px]" src="assets/logo-dark.png" alt="">
+        <h1 class="sm:text-[35px] text-[25px] font-bold my-2">Emergency Service Directory</h1>
+        <p class="sm:text-[17px] text-[15px] font-semibold">Government Emergency Services at Your Fingertip – A Project
+            by Government
             of the People’s Republic of
             Bangladesh</p>
     </section>
 
     <!-- main section -->
-    <section class="mt-10 flex gap-7 mx-8">
+    <section class="mt-10 flex flex-col sm:flex-row gap-7 mx-8">
 
-        <!-- letf-div -->
-        <div class="grid grid-cols-3 gap-7">
+        <!-- left-div -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  gap-7 flex-3">
             <div class="card bg-base-100 shadow-sm">
                 <div class="card-body">
                     <div class="flex items-center justify-between">
@@ -219,15 +220,16 @@
         </div>
 
         <!-- right-div -->
-        <div>
-            <div class="card card-dash bg-base-100 w-96">
+        <div class="w-full mx-auto flex-1">
+
+            <div class="card card-dash bg-base-100">
                 <div class="card-body flex flex-row justify-between">
                     <div class="flex items-center gap-2">
                         <i class="fa-regular fa-clock text-xl text-[#5C5C5C]"></i>
                         <h4 class="card-title">Call History</h4>
                     </div>
-                    <button class="bg-[#29A74A] rounded-3xl px-8 p-2 font-semibold text-white text-[17px]">
-                        Clear
+                    <button class="bg-[#29A74A] rounded-3xl px-7 p-2 font-semibold text-white text-[17px]">
+                        <a href="">Clear</a>
                     </button>
                 </div>
             </div>
