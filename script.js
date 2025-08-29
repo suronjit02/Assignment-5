@@ -81,7 +81,6 @@ const currentCallHistory = document.getElementById("call-history");
 const clearBtn = document.getElementById("clear-btn");
 
 clearBtn.addEventListener("click", function () {
-    
 
     currentCallHistory.remove();
 

@@ -20,7 +20,7 @@
 <body class="inter-font bg-slate-100 pb-10">
 
     <!-- navbar -->
-    <nav class="navbar bg-base-100 shadow-sm sm:px-10 px-2 py-3">
+    <nav class="navbar bg-base-100 shadow-sm sm:px-12 px-2 py-3">
 
         <div class="flex-1 flex gap-2 items-center">
             <img class="h-6 sm:h-10" src="assets/logo.png" alt="">
@@ -29,25 +29,29 @@
 
         <!-- right div -->
         <div class="flex-none">
-            <ul class="menu menu-horizontal gap-4">
+            <div class="menu menu-horizontal gap-4">
 
                 <!-- heart icon -->
-                <li class="bg-base-200 rounded-[20px] sm:px-3 px-0 font-bold flex flex-row items-center sm:h-10 h-8">
-                    <span id="nav-heart" class="pr-0">0</span><img class="sm:h-10 h-8" src="assets/heart.png" alt="">
-                </li>
+                <button
+                    class="bg-base-200 rounded-[20px] sm:px-3 px-2 font-bold flex flex-row items-center gap-1 sm:h-10 hover:bg-slate-200">
+                    <span id="nav-heart" class="pr-0">0</span><img class="sm:h-[26px] h-5" src="assets/heart.png"
+                        alt="">
+                </button>
 
                 <!-- coin icon -->
-                <li class="bg-base-200 rounded-[20px] sm:px-3 px-0 font-bold flex flex-row items-center sm:h-10 h-8">
-                    <span id="nav-coin" class="pr-0">100</span> <img class="sm:h-10 h-8" src="assets/coin.png" alt="">
-                </li>
+                <button
+                    class="bg-base-200 rounded-[20px] sm:px-3 px-2 font-bold flex flex-row items-center gap-1 sm:h-10 h-8 hover:bg-slate-200">
+                    <span id="nav-coin" class="pr-0">100</span> <img class="sm:h-[26px] h-5" src="assets/coin.png"
+                        alt="">
+                </button>
 
                 <!-- copy count -->
                 <button
-                    class=" bg-[#29A74A] rounded-[20px] sm:px-3 font-bold text-white flex flex-row items-center text-[12px] sm:text-[16px] sm:h-10 h-8 gap-1 px-3">
+                    class=" bg-[#29A74A] hover:bg-green-800 rounded-[20px] sm:px-3 font-bold text-white flex flex-row items-center text-[12px] sm:text-[16px] sm:h-10 h-8 gap-1 px-3">
                     <span id="nav-copy-count">0</span> Copy
                 </button>
 
-            </ul>
+            </div>
         </div>
     </nav>
 
@@ -333,8 +337,9 @@
         <!-- right-div for call history -->
         <div class=" w-full mx-auto flex-1">
 
-            <div class="card card-dash bg-base-100">
+            <div class="bg-white rounded-lg shadow-sm h-full">
                 <div class="card-body flex flex-row justify-between">
+
                     <div class="flex items-center gap-2 h-10">
                         <i class="fa-regular fa-clock text-xl text-[#5C5C5C] "></i>
                         <h4 class="card-title">Call History</h4>
@@ -342,7 +347,7 @@
 
 
                     <a id="clear-btn"
-                        class=" bg-[#29A74A] rounded-3xl px-7 p-2 font-semibold text-white text-[17px] h-10 shadow-md"
+                        class=" hover:bg-green-800 bg-[#29A74A] rounded-3xl px-7 p-2 font-semibold text-white text-[17px] h-10 shadow-md"
                         href="">Clear</a>
 
                 </div>
