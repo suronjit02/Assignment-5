@@ -64,8 +64,6 @@ for (let button of callButtons) {
             callHistoryDiv.prepend(callHistoryItem);
 
 
-
-
         }
         else alert("⚠️ Insufficient coins. 20 coins are required to place this call.");
 
@@ -74,3 +72,15 @@ for (let button of callButtons) {
     })
 
 }
+
+
+// clear button functionality
+
+const currentCallHistory = document.getElementById("call-history");
+
+
+document.getElementById("clear-button").addEventListener("click", function () {
+
+    currentCallHistory.remove;
+
+})
