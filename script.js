@@ -27,14 +27,14 @@ for (let button of callButtons) {
 
         const card = this.closest(".card");
 
-        const title = card.querySelector("p").innerText;
+        const cardTitle = card.querySelector("h2").innerText;
         const number = card.querySelector("h3").innerText;
 
         const navCoin = document.getElementById("nav-coin").innerText;
 
         if (navCoin >= 20) {
 
-            alert("📞 Calling " + title + " " + number);
+            alert("📞 Calling " + cardTitle + " " + number);
 
 
             //coin calculation
@@ -51,7 +51,7 @@ for (let button of callButtons) {
             callHistoryItem.innerHTML = `
             
              <div>
-                  <h3 class="font-bold">${title}</h3>
+                  <h3 class="font-bold">${cardTitle}</h3>
                   <p class="text-[#5C5C5C]">${number}</p>
             </div>
             <p class="text-[14px] text-[#5C5C5C] font-semibold">${time}</p>
@@ -81,7 +81,9 @@ const currentCallHistory = document.getElementById("call-history");
 const clearBtn = document.getElementById("clear-btn");
 
 clearBtn.addEventListener("click", function () {
-    currentCallHistory.innerHTML = "";
+
+    currentCallHistory.remove();
+
 })
 
 // copy functionality
