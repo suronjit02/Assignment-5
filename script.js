@@ -78,9 +78,42 @@ for (let button of callButtons) {
 
 const currentCallHistory = document.getElementById("call-history");
 
+const clearBtn = document.getElementById("clear-btn");
 
-document.getElementById("clear-button").addEventListener("click", function () {
+clearBtn.addEventListener("click", function () {
+    
 
-    currentCallHistory.remove;
+    currentCallHistory.remove();
 
 })
+
+// copy functionality
+
+const copyButtons = document.querySelectorAll(".copy-btn");
+
+let currentCopyTotal = 0;
+
+for (let button of copyButtons) {
+
+    button.addEventListener("click", function () {
+
+        const clickedCard = this.closest(".card");
+
+        const copiedText = clickedCard.querySelector(".main-section-left-div .card h3").innerText;
+
+        navigator.clipboard.writeText(copiedText);
+
+        alert("Copied This Hotline Number: " + copiedText);
+
+
+        navigator.clipboard.writeText(copiedText);
+
+
+        currentCopyTotal++;
+        document.getElementById("nav-copy-count").innerText = currentCopyTotal;
+
+    })
+
+
+
+}

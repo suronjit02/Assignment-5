@@ -23,8 +23,8 @@
     <nav class="navbar bg-base-100 shadow-sm sm:px-10 px-2 py-3">
 
         <div class="flex-1 flex gap-2 items-center">
-            <img class="h-7 sm:h-10" src="assets/logo.png" alt="">
-            <a class="text-[#006747] sm:text-[20px] text-[12px] font-bold leading-tight ">Emergency <br> Service</a>
+            <img class="h-6 sm:h-10" src="assets/logo.png" alt="">
+            <a class="text-[#006747] sm:text-[20px] text-[10px] font-bold leading-tight ">Emergency <br> Service</a>
         </div>
 
         <!-- right div -->
@@ -32,20 +32,20 @@
             <ul class="menu menu-horizontal gap-4">
 
                 <!-- heart icon -->
-                <li class="bg-base-200 rounded-[20px] sm:px-3 px-0 font-bold flex flex-row items-center h-10"><span
-                        id="nav-heart" class="pr-0">0</span><img class="sm:h-10 h-8" src="assets/heart.png" alt="">
+                <li class="bg-base-200 rounded-[20px] sm:px-3 px-0 font-bold flex flex-row items-center sm:h-10 h-8">
+                    <span id="nav-heart" class="pr-0">0</span><img class="sm:h-10 h-8" src="assets/heart.png" alt="">
                 </li>
 
                 <!-- coin icon -->
-                <li class="bg-base-200 rounded-[20px] sm:px-3 px-0 font-bold flex flex-row items-center h-10"><span
-                        id="nav-coin" class="pr-0">100</span> <img class="sm:h-10 h-8" src="assets/coin.png" alt="">
+                <li class="bg-base-200 rounded-[20px] sm:px-3 px-0 font-bold flex flex-row items-center sm:h-10 h-8">
+                    <span id="nav-coin" class="pr-0">100</span> <img class="sm:h-10 h-8" src="assets/coin.png" alt="">
                 </li>
 
                 <!-- copy count -->
-                <li
-                    class="bg-[#29A74A] rounded-[20px] sm:px-3 px-0 font-bold text-white flex flex-row items-center text-[12px]">
-                    <span>0<span>Copy</span></span>
-                </li>
+                <button
+                    class=" bg-[#29A74A] rounded-[20px] sm:px-3 font-bold text-white flex flex-row items-center text-[12px] sm:text-[16px] sm:h-10 h-8 gap-1 px-3">
+                    <span id="nav-copy-count">0</span> Copy
+                </button>
 
             </ul>
         </div>
@@ -64,10 +64,11 @@
     </section>
 
     <!-- main section -->
-    <section class="mt-10 flex flex-col sm:flex-row gap-7 mx-8">
+    <section class="mt-10 flex flex-col-reverse sm:flex-row gap-7 mx-8">
 
         <!-- left-div for card -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  gap-7 flex-3">
+        <div class=" main-section-left-div grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3  gap-7 flex-3">
+
             <div class="card bg-base-100 shadow-sm">
                 <div class="card-body">
                     <div class="flex items-center justify-between">
@@ -84,7 +85,7 @@
                     </div>
                     <div class="flex gap-3 justify-center mt-3">
                         <button
-                            class="btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
+                            class="copy-btn btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
                                 class="fa-regular fa-copy"></i><span>Copy</span>
                         </button>
                         <button
@@ -94,6 +95,9 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div class="card bg-base-100 shadow-sm">
                 <div class="card-body">
                     <div class="flex items-center justify-between">
@@ -110,7 +114,7 @@
                     </div>
                     <div class="flex gap-3 justify-center mt-3">
                         <button
-                            class="btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
+                            class="copy-btn btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
                                 class="fa-regular fa-copy"></i><span>Copy</span>
                         </button>
                         <button
@@ -120,6 +124,9 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div class="card bg-base-100 shadow-sm">
                 <div class="card-body">
                     <div class="flex items-center justify-between">
@@ -136,7 +143,7 @@
                     </div>
                     <div class="flex gap-3 justify-center mt-3">
                         <button
-                            class="btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
+                            class="copy-btn btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
                                 class="fa-regular fa-copy"></i><span>Copy</span>
                         </button>
                         <button
@@ -146,6 +153,9 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div class="card bg-base-100 shadow-sm">
                 <div class="card-body">
                     <div class="flex items-center justify-between">
@@ -162,7 +172,7 @@
                     </div>
                     <div class="flex gap-3 justify-center mt-3">
                         <button
-                            class="btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
+                            class="copy-btn btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
                                 class="fa-regular fa-copy"></i><span>Copy</span>
                         </button>
                         <button
@@ -172,6 +182,9 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div class="card bg-base-100 shadow-sm">
                 <div class="card-body">
                     <div class="flex items-center justify-between">
@@ -188,7 +201,7 @@
                     </div>
                     <div class="flex gap-3 justify-center mt-3">
                         <button
-                            class="btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
+                            class="copy-btn btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
                                 class="fa-regular fa-copy"></i><span>Copy</span>
                         </button>
                         <button
@@ -198,6 +211,9 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div class="card bg-base-100 shadow-sm">
                 <div class="card-body">
                     <div class="flex items-center justify-between">
@@ -214,7 +230,94 @@
                     </div>
                     <div class="flex gap-3 justify-center mt-3">
                         <button
-                            class="btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
+                            class="copy-btn btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
+                                class="fa-regular fa-copy"></i><span>Copy</span>
+                        </button>
+                        <button
+                            class="call-button btn btn-primary w-1/2 bg-[#29A74A] border-none rounded-lg flex justify-center items-center"><i
+                                class="fa-solid fa-phone"></i><span>Call</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card bg-base-100 shadow-sm">
+                <div class="card-body">
+                    <div class="flex items-center justify-between">
+                        <img class="h-12 bg-slate-200 p-2 rounded-xl" src="assets/emergency.png" alt="">
+                        <i class="fa-regular fa-heart text-xl text-[#5C5C5C]"></i>
+                    </div>
+                    <div>
+                        <h2 class="card-title font-bold text-[20px] mt-3">Electricity Helpline</h2>
+                        <p class="text-[#5C5C5C] text-[17px] ">Electricity Outage</p>
+                    </div>
+                    <div>
+                        <h3 class="text-[32px] font-bold mt-2">16216</h3>
+                        <span class="text-[18px] text-[#5C5C5C] bg-slate-200 px-4 rounded-xl">Electricity</span>
+                    </div>
+                    <div class="flex gap-3 justify-center mt-3">
+                        <button
+                            class="copy-btn btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
+                                class="fa-regular fa-copy"></i><span>Copy</span>
+                        </button>
+                        <button
+                            class="call-button btn btn-primary w-1/2 bg-[#29A74A] border-none rounded-lg flex justify-center items-center"><i
+                                class="fa-solid fa-phone"></i><span>Call</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card bg-base-100 shadow-sm">
+                <div class="card-body">
+                    <div class="flex items-center justify-between">
+                        <img class="h-12 bg-slate-200 p-2 rounded-xl" src="assets/brac.png" alt="">
+                        <i class="fa-regular fa-heart text-xl text-[#5C5C5C]"></i>
+                    </div>
+                    <div>
+                        <h2 class="card-title font-bold text-[20px] mt-3">Brac Helpline</h2>
+                        <p class="text-[#5C5C5C] text-[17px] ">Brac</p>
+                    </div>
+                    <div>
+                        <h3 class="text-[32px] font-bold mt-2">16445</h3>
+                        <span class="text-[18px] text-[#5C5C5C] bg-slate-200 px-4 rounded-xl">NGO</span>
+                    </div>
+                    <div class="flex gap-3 justify-center mt-3">
+                        <button
+                            class="copy-btn btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
+                                class="fa-regular fa-copy"></i><span>Copy</span>
+                        </button>
+                        <button
+                            class="call-button btn btn-primary w-1/2 bg-[#29A74A] border-none rounded-lg flex justify-center items-center"><i
+                                class="fa-solid fa-phone"></i><span>Call</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card bg-base-100 shadow-sm">
+                <div class="card-body">
+                    <div class="flex items-center justify-between">
+                        <img class="h-12 bg-slate-200 p-2 rounded-xl" src="assets/Bangladesh-Railway.png" alt="">
+                        <i class="fa-regular fa-heart text-xl text-[#5C5C5C]"></i>
+                    </div>
+                    <div>
+                        <h2 class="card-title font-bold text-[20px] mt-3">Bangladesh Railway Helpline</h2>
+                        <p class="text-[#5C5C5C] text-[17px] ">Bangladesh Railway</p>
+                    </div>
+                    <div>
+                        <h3 class="text-[32px] font-bold mt-2">163</h3>
+                        <span class="text-[18px] text-[#5C5C5C] bg-slate-200 px-4 rounded-xl">Travel</span>
+                    </div>
+                    <div class="flex gap-3 justify-center mt-3">
+                        <button
+                            class="copy-btn btn btn-primary w-1/2 bg-white border-[#D4D6D5] rounded-lg text-[16px] text-[#5C5C5C]"><i
                                 class="fa-regular fa-copy"></i><span>Copy</span>
                         </button>
                         <button
@@ -228,7 +331,7 @@
         </div>
 
         <!-- right-div for call history -->
-        <div class=" w-full  mx-auto flex-1">
+        <div class=" w-full mx-auto flex-1">
 
             <div class="card card-dash bg-base-100">
                 <div class="card-body flex flex-row justify-between">
@@ -236,14 +339,17 @@
                         <i class="fa-regular fa-clock text-xl text-[#5C5C5C] "></i>
                         <h4 class="card-title">Call History</h4>
                     </div>
-                    <button id="clear-button" class="bg-[#29A74A] rounded-3xl px-7 p-2 font-semibold text-white text-[17px] h-10">
-                        <a href="">Clear</a>
-                    </button>
+
+
+                    <a id="clear-btn"
+                        class=" bg-[#29A74A] rounded-3xl px-7 p-2 font-semibold text-white text-[17px] h-10 shadow-md"
+                        href="">Clear</a>
+
                 </div>
 
 
                 <!-- call history div -->
-                <div id="call-history" class="my-2 h-[100vh] mx-2">
+                <div id="call-history" class="my-2 sm:h-[100vh] mx-2">
 
                 </div>
 
